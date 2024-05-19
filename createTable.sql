@@ -23,7 +23,7 @@ CREATE TABLE Base (
 -- Table for Flight
 CREATE TABLE Flight (
   Flight_ID INT NOT NULL,
-  Date_Of_Fligh DATE NOT NULL,
+  Date_Of_Flight DATE NOT NULL,
   Mission_ID INT NOT NULL,
   PRIMARY KEY (Flight_ID, Mission_ID),
   FOREIGN KEY (Mission_ID) REFERENCES Mission(Mission_ID)
